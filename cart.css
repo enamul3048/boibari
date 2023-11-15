@@ -1,0 +1,89 @@
+:root {
+    --orange: #ffA500;
+    --dark-color: #e69500;
+    --black: #444;
+    --light-color: #ffa07a;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+body {
+    background: url(https://www.northern-times.co.uk/_media/img/MPRH780V3YMI3VYJRNS4.jpg) no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    margin-top: 1rem; 
+    display:inline-block; 
+    padding: 1rem;
+    border-radius: .5rem; 
+    color:var(--orange); 
+    cursor: pointer;
+    background:#fff;
+    font-size: 1rem;
+    margin-left: 3rem;
+}
+
+
+.btn:hover {
+    background-color: var(--light-color);
+    color: white;
+}
+
+.cart {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+h2 {
+    border-bottom: var(--border);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--black);
+    text-align: center;
+}
+
+#cart-items {
+    list-style-type: decimal;
+    padding: 2rem;
+}
+
+.cart p {
+    text-align: center;
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-top: var(--border);
+}
+.cart p span {
+    color: var(--orange);
+}
+.cart #cart-items li {
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 1rem;
+    border-bottom: var(--border);
+}

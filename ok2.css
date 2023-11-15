@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --orange: #ffa500;
+  --dark-color: #e69500;
+  --black: #444;
+  --light-color: #ffa07a;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  transition: width none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url(https://www.northern-times.co.uk/_media/img/MPRH780V3YMI3VYJRNS4.jpg)
+    no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.containerr {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  margin-top: 20rem;
+}
+
+h1 {
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--black);
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: var(--border);
+  border-radius: 3px;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border: var(--border-hover);
+}
+
+button {
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--dark-color);
+}
+
+.back-button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  border-radius: 0.5rem;
+  color: var(--orange);
+  cursor: pointer;
+  background: #fff;
+  font-size: 1.7rem;
+  margin-left: 3rem;
+}
+
+.back-button:hover {
+  background-color: var(--light-color);
+  color: white;
+}
